@@ -20,7 +20,8 @@ from inventario import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('accounts/', include('django.contrib.auth.urls')),  
+    path('accounts/', include('django.contrib.auth.urls')), 
+    # Paths de inventario 
     path('', views.lista_productos, name='lista_productos'), 
     path('nuevo/', views.crear_producto, name='crear_producto'),
 ]
